@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart PriceCompare</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hero Banner -->
+  <header class="hero">
+    <div class="hero-text animate-fade-in">
+      <h1>Smart PriceCompare</h1>
+      <p>Compare products across top shopping platforms in style</p>
+    </div>
+  </header>
+
+  <main class="main-section">
+    <section class="search-section animate-slide-up">
+      <input type="text" id="productInput" placeholder="Enter product name..." />
+      <button onclick="comparePrices()">Compare 🔍</button>
+    </section>
+
+    <section class="results animate-fade-in">
+      <h2 id="productTitle">Search a product to compare prices</h2>
+      <table id="price-table">
+        <thead>
+          <tr>
+            <th>Shopping Site</th>
+            <th>Price (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Results go here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Smart PriceCompare. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
